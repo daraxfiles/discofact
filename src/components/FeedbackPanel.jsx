@@ -1,0 +1,1 @@
+export default function FeedbackPanel({msg,points}){if(!msg)return null;return <div className='mt-3 p-3 rounded-xl bg-indigo-50 border'><p>{msg}</p><p className='font-semibold'>Truth Points: {points>=0?`+${points}`:points}</p></div>}

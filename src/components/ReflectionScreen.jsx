@@ -1,0 +1,2 @@
+import { useState } from 'react';
+export default function ReflectionScreen({mission,onSave}){const [t,setT]=useState('');return <div className='p-6 max-w-3xl mx-auto'><h2 className='text-2xl font-bold'>Reflection</h2><p className='mt-2'>{mission.reflectionPrompt}</p><textarea className='w-full border rounded-xl p-3 mt-2' rows='5' value={t} onChange={e=>setT(e.target.value)} /><button onClick={()=>onSave(t)} className='mt-3 px-4 py-2 bg-indigo-600 text-white rounded-xl'>Save Reflection</button></div>}
